@@ -15,67 +15,69 @@
     <title>Weather App</title>
   </head>
   <body class="body">
-    <div class="app">
-      <div class="container">
-        <div class="card" style="width: 800px; height: 430px">
-          <div class="card-body">
-            <form class="form-wrapper">
-              <input
-                type="text"
-                placeholder="Enter city here"
-                id="city-input"
-              />
-              <input class="btn" type="submit" value="Search" />
-              <button id="currentLocation">Current</button>
-            </form>
-            <h1 class="city"></h1>
-            <h2 class="currentTime">
-              Last updated
-              <span id="time"></span>
-            </h2>
-            <div class="containerdetails">
-              <div class="row units">
-                <div class="col details">
-                  <img src="" id="icon" />
-                  <span class="temperature"></span>
-                  <span class="celsiusUnits" href="#"> °C </span>
-                  <span class="line">|</span>
-                  <span class="fahrenheitUnits" href="#">°F </span>
+    <div class="background">
+      <div class="app">
+        <div class="container">
+          <div class="card" style="width: 800px; height: 430px">
+            <div class="card-body">
+              <form class="form-wrapper">
+                <input
+                  type="text"
+                  placeholder="Enter city here"
+                  id="city-input"
+                />
+                <input class="btn" type="submit" value="Search" />
+                <button id="currentLocation">Current</button>
+              </form>
+              <h1 class="city"></h1>
+              <h2 class="currentTime">
+                Last updated
+                <span id="time"></span>
+              </h2>
+              <div class="containerdetails">
+                <div class="row units">
+                  <div class="col details">
+                    <img src="" id="icon" />
+                    <span class="temperature"></span>
+                    <span class="celsiusUnits" href="#"> °C </span>
+                    <span class="line">|</span>
+                    <span class="fahrenheitUnits" href="#">°F </span>
+                  </div>
+                  <div class="col details">
+                    <ul>
+                      <li class="weatherDescription"></li>
+                      <li class="humidity"></li>
+                      <li class="wind"></li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="col details">
-                  <ul>
-                    <li class="weatherDescription"></li>
-                    <li class="humidity"></li>
-                    <li class="wind"></li>
-                  </ul>
+              </div>
+              <div class="row second">
+                <div class="col">
+                  March 13<br /><span class="firstday">☀</span>
                 </div>
-              </div>
-            </div>
-            <div class="row second">
-              <div class="col">
-                March 13<br /><span class="firstday">☀</span>
-              </div>
-              <div class="col">
-                March 14<br /><span class="secondday">🌦</span>
-              </div>
-              <div class="col">
-                March 15<br /><span class="thirdday">🌦</span>
-              </div>
-              <div class="col">
-                March 16<br /><span class="forthday">⛅</span>
-              </div>
-              <div class="col">
-                March 17<br /><span class="fifthday">⛅</span>
+                <div class="col">
+                  March 14<br /><span class="secondday">🌦</span>
+                </div>
+                <div class="col">
+                  March 15<br /><span class="thirdday">🌦</span>
+                </div>
+                <div class="col">
+                  March 16<br /><span class="forthday">⛅</span>
+                </div>
+                <div class="col">
+                  March 17<br /><span class="fifthday">⛅</span>
+                </div>
               </div>
             </div>
           </div>
+          <p class="footer">
+            <a href="https://github.com/biotech-Dlvr/homework2" target="_blank"
+              >GitHub repository</a
+            >
+            by Azar Delavari
+          </p>
         </div>
-        <p class="footer">
-          <a href="https://github.com/biotech-Dlvr/homework2" target="_blank"
-            >GitHub repository</a
-          >
-          by Azar Delavari
-        </p>
       </div>
     </div>
     <script src="src/index.js"></script>
